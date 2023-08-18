@@ -1,0 +1,507 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+    </head>
+
+    <body>
+<main>
+
+
+<div class="top">
+   <ul class="top-nav">
+        <li><a style="color: orange;" href="#">Save MORE ON APP</a></li>
+        <li><a href="#">DARAZ AFFILIATE PROGRAM</a></li>
+        <li><a href="#">SELL ON DARAZ</a></li>
+        <li><a href="#">CUSTOMER CARE</a></li>
+        <li><a href="#">TRACK MY ORDER</a></li>
+        <li><a href="#">lOGIN</a></li> 
+        <li><a href="#">SIGN UP</a></li>
+        <li><a href="#">  زبان تبدیل کریں
+ </a></li>   </ul>
+</div>
+<div class="sub-top">
+
+<img class="item" src="Images/logopk.png">
+<div class="search-bar item">
+    <input type="text" class="search-bar-input" placeholder="Search in Daraz">
+    <button type="submit" class="search-bar-icon"><i class="fa fa-search"></i></button>
+  </div>
+
+  <button type="button" class="cart"><i class="fa fa-shopping-cart"></i>
+  </button>
+
+
+  <a href="Index.html" type="button" ><img class="darazlink" src="Images/downloadbutton.png"></a>
+</div>
+
+
+<div id="carouselExample" class="carousel slide" data-ride="carousel">
+
+
+    
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExample" data-slide-to="1"></li>
+      <li data-target="#carouselExample" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        
+      <div class="carousel-item active">
+        <img src="Images/image1.jpg" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/image2.jpg" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="Images/image3.jpg" alt="Slide 3">
+      </div>
+    </div>
+
+
+   
+  </div>
+  
+    <div class="categories-menu">
+       <ul class="menu">
+        <li><a onmouseover="changeSubSideNav('groceries')" >Groceries & Pets</a> <span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a onmouseover="changeSubSideNav('health')">Health & Beauty</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a onmouseover="changeSubSideNav('fashion')">Men's Fashion</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a>Women's Fashion</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a>Mother & Baby</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a>Home & Lifestyle</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a>Electronic Devices</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a>Electronic Accessories</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a>TV & Home Appliances</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a>Sports & Outdoo</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li> <a>Automotive & Motorbike</a> <span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+        <li><a>Watches, Bags & Jewellery</a><span ><i class="fa fa-arrow-right" aria-hidden="true"></i></span></li>
+      </ul>
+    </div>
+    <div class="sub-categories-menu">
+      <ul class="sub-menu" id="subSideNav">
+   
+     </ul>
+   </div>
+
+
+<div class="centerMenu">
+
+  <div class="centerlidiv"><a href="Index.html" style="text-decoration: none;"><img src="Images/mart.png">Mart</a><span ><i class="fa fa-arrow-right ll" aria-hidden="true"></i></span></div>
+  <div class="centerlidiv"><a href="Index.html"style="text-decoration: none;" ><img src="Images/fashion.png">Fashion</a><span ><i class="fa fa-arrow-right li" aria-hidden="true"></i></span></div>
+  <div class="centerlidiv"><a href="Index.html"style="text-decoration: none;"><img src="Images/beauty.png">Beauty</a><span ><i class="fa fa-arrow-right li" aria-hidden="true"></i></span></div>
+  <div class="centerlidiv"><a href="Index.html"style="text-decoration: none;"><img src="Images/home.png">Home & Decor</a><span ><i  class="fa fa-arrow-right la" aria-hidden="true"></i></span></div>
+
+
+
+
+</div>
+
+<div class="container">
+<h2>Flash Sale</h2>
+<div class="contentcontainerdiv "><p>On Sale Now   <span style="margin-left: 3rem; color: black; font-size: 20px;">Ending in</span>  </p> <p id="MyTimer"></p> <button id="shopbtn">Shop More</button> </div>
+<br>
+<div class="contentcontainer">
+
+  <div class="card-container">
+    <div class="card">
+      <img src="Images/card1.jpg" alt="Image 1">
+      <div class="card-content">
+        <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+        <p>RS 170</p>
+    <p class="dis">Rs.2000 -63%</p>    
+      </div>
+    </div>
+    
+    <div class="card">
+      <img src="Images/card2.jpg" alt="Image 2">
+      <div class="card-content">
+        <h3>Uptown LA Oil For All Hair Care Oil Control Frizz</h3>
+        <p>RS 129</p>
+        
+    <p class="dis">Rs.2000 -63%</p>  
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="Images/card3.jpg" alt="Image 2">
+      <div class="card-content">
+        <h3>MISBAH Original Rechargeable Flawless</h3>
+        <p>RS 300</p>
+        
+    <p class="dis">Rs.2000 -63%</p>  
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="Images/card4.jpg" alt="Image 2">
+      <div class="card-content">
+        <h3>PAREESA Onion oil for hair growth, Onion and black</h3>
+        <p>400</p>
+        
+    <p class="dis">Rs.2000 -63%</p>  
+      </div>
+    </div>
+    <div class="card">
+      <img src="Images/card5.jpg" alt="Image 2">
+      <div class="card-content">
+        <h3>FootKicks Men's FLIP FLOP-Stylish Chappal for</h3>
+        <p>698</p>
+        
+    <p class="dis">Rs.2000 -63%</p>  
+      </div>
+    </div>
+    <div class="card">
+      <img src="Images/card6.jpg" alt="Image 2">
+      <div class="card-content">
+        <h3>Pure Bee Honey 150g bottle 100% Original-Pure-</h3>
+        <p>890</p>
+        
+    <p class="dis">Rs.2000 -63%</p>  
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+  
+
+</div> 
+<br> 
+
+
+<h3 style="  font-size: 28px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  opacity: 0.7;">Categories</h3>
+<table>
+
+  <tr>
+    <td><img src="Images/cat1.jpg">
+      <p>Laptop Stands</p></td>
+    <td><img src="Images/cat2.jpg">
+      <p>3D Printing Materials</p></td>
+    <td><img src="Images/cat3.jpg">
+      <p>3D Printing Materials</p></td>
+    <td><img src="Images/cat4.jpg">
+      <p>Laptop Stands</p></td>
+    <td><img src="Images/cat5.jpg">
+      <p>Laptop Stands</p></td>
+    <td><img src="Images/card6.jpg">
+      <p>Laptop Stands</p></td>
+    <td><img src="Images/cat7.jpg">
+      <p>Laptop Stands</p></td>
+    
+   
+  </tr>
+
+  <tr> <td><img src="Images/cat8.jpg">
+      <p>Laptop Stands</p></td>
+    <td><img src="Images/cat9.jpg">
+      <p>Laptop Stands</p></td>
+    <td><img src="Images/cat10.jpg">
+      <p>Laptop Stands</p></td>
+    <td><img src="Images/cat11.jpg">
+      <p>3D Printing Materials</p></td>
+    <td><img src="Images/cat12.jpg">
+      <p>3D Printing Materials</p></td>
+    <td><img src="Images/cat13.jpg">
+      <p>Laptop Stands</p></td>
+    <td><img src="Images/cat14.jpg">
+      <p>Laptop Stands</p></td>
+  
+   
+  </tr>
+</table>
+
+
+
+        
+                      
+<h3 style="  font-size: 28px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+opacity: 0.7; margin-top: 3%;">Just For You</h3>           
+                      
+               
+               <div class="card-container">
+
+                <div class="card">
+                  <img src="Images/j1.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="Images/j2.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j3_.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j4.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j5.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j6.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+
+               </div>
+               <div class="card-container">
+
+                <div class="card">
+                  <img src="Images/j7.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="Images/j8.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j9j.jpg" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j10.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j11.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j12.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+
+               </div>
+               <div class="card-container">
+
+                <div class="card">
+                  <img src="Images/j7.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+
+
+                <div class="card">
+                  <img src="Images/j14.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j15.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j16.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j17.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="Images/j18.webp" alt="Image 1">
+                  <div class="card-content">
+                    <h3>Soft Portable Eye Mask Black Fast Sleeping</h3>
+                    <p>RS 170</p>
+                <p class="dis">Rs.2000 -63%</p>    
+                  </div>
+                </div>
+
+               </div>
+                      
+               <div class="load">
+                <button >Load More</button>
+               </div>
+
+
+  
+
+                      </div>
+
+
+
+
+</div>
+
+
+
+</main>
+
+<footer>
+  <div class="links">
+                <div class="box">
+<h4>Customer Care</h4>
+<ul>
+ <li>Help Center</li> 
+<li>How to Buy</li>
+<li>Corporate & Bulk Purchasing</li>
+<li>Returns & Refunds</li>
+<li>Daraz Shop</li>
+<li>Contact Us</li>
+<li>Purchase Protection</li>
+<li>Daraz Pick up Points</li>
+</ul>
+
+<h4>
+  Make Money With Us
+</h4>
+<ul>
+  <li>Daraz University</li>
+<li>Sell on Daraz</li>
+<li>Join Daraz Affiliate Program</li>
+</ul>
+
+
+                </div>
+                <div class="box">
+
+                 <h4>Daraz</h4> 
+                 <ul> <li>About Us</li>
+                  <li>Digital Payments</li> 
+                  <li>Daraz Donates</li> 
+                  <li>Daraz Blog</li> 
+                  <li>Terms & Conditions</li> 
+                  <li>Privacy Policy</li>
+                  <li>NTN Number : 4012118-6</li> 
+                  <li>STRN Number : 1700401211818</li> 
+                  <li>Online Shopping App</li> 
+                  <li>Online Grocery Shopping</li> 
+                  <li> Daraz Exclusive</li> </ul>
+                 
+                  
+
+                </div>
+                <div class="box">
+<img src="Images/barcode.png" width="120" height="120" style="border-radius: 20px;">
+<img src="Images/d.png" width="40" height="40" style="margin-left:20px ;">
+<p style="position: relative; left: 9rem; bottom: 2rem; color: orange;">Happy Shopping
+    <br> <span style="color: white;">Download App</span> </p>
+
+
+<a href="Index.html"><img class="gallimg" src="Images/google.jpg"></a>
+<a href="Index.html"><img class="gallimg" src="Images/apple.jpg"></a>
+<a href="Index.html"><img class="gallimg" src="Images/appg.png"> </a>
+
+
+                </div>
+              
+              </div>
+         
+            
+
+              </div>
+
+</footer>
+      
+ 
+<script src="categories.js"></script>
+    <script src="Timer.js"></script>
+
+
+
+<script>  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 3000, // Set the interval (in milliseconds) between slide transitions
+      pause: false, // Set to "true" to pause on hover
+      ride: 'carousel' // Set to "carousel" to enable autoplay
+    });
+  });</script>
+    </body>
+</html>
